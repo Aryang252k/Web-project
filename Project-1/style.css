@@ -1,6 +1,10 @@
+*body{
+    margin: 0;
+    padding: 0;
+}
 .main{
-    min-height: 240vh;
-    min-width: 900vh;
+    min-height: 300vh;
+    min-width: 200vh;
    background-color:rgba(240, 44, 44,0.5);
    border: 10px solid rgba(0, 0, 0,0.5);
    margin:auto;
@@ -92,7 +96,7 @@ img{
 }
 
 .para0{
-    height: 710px;
+    height: 730px;
     width:1050px;
     background-color: rgba(255, 225, 127, 0.881);
     position:absolute;
@@ -105,4 +109,13 @@ img{
 b{
     font-size: 20px;
     color:rgba(44, 42, 202, 0.916);
+}
+.more{
+    position: absolute;
+    top:1900px;
+    left: 550px;
+    font-size: 50px;
+    font-weight: 20px;
+    text-decoration: none;
+    color:aqua;
 }
