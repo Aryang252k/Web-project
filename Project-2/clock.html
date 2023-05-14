@@ -1,0 +1,74 @@
+<html>
+    <head>
+      <title>Digital clock </title>
+      <style type="text/css">
+        body{
+            background-color: rgba(92, 185, 197, 0.822);  
+        }
+        .box 
+        {
+            background-color: rgba(0, 0, 0, 0.822);
+            
+            margin: auto;
+            height: 75px;
+            width: 600px;
+            margin-top: 250px;
+            border: 3px  solid rgb(29, 28, 28); 
+            animation-name: rotat;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-out ;
+            
+        }
+        @keyframes rotat {
+            0%{
+                border: 3px  solid rgb(29, 28, 28); 
+            }
+            25%{
+                border-top: 3px  solid rgb(255, 255, 255); 
+            }
+            50%{
+                border-right: 3px  solid rgb(255, 255, 255);
+            }
+            75%{
+                border-bottom: 3px  solid rgb(255, 255, 255);
+            }
+            100%{
+                border-left: 3px  solid rgb(255, 255, 255);
+            }
+        }
+        .box,h1{
+            color: white;
+            font-size: 50px;
+            font-weight: bold;
+            text-align: center;
+            padding-top:10px;
+
+        }
+      </style>
+    </head>
+    <body onload="showtime()">
+ <div class="box" >
+ </div>
+    </body>
+    <script>
+        function showtime()
+        {
+      var tim= new Date();
+      var h=tim.getHours();
+      var m=tim.getMinutes();
+      var s=tim.getSeconds();
+      var sess="AM";
+      h>=12?sess="PM":sess;
+       h>12?h=h-12:h;
+       h<10?h="0"+h:h;
+        m<10?m="0"+m:m;
+        s<10?h="0"+s:s;
+      var time= h+":"+m+":"+s+" "+sess;
+      document.getElementsByTagName('div')[0].innerText=time;
+      setTimeout(showtime, 1000);
+ 
+        }
+
+    </script>
+</html>
