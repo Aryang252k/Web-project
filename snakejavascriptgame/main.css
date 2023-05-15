@@ -1,0 +1,32 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow:hidden;
+    background-color: aquamarine;
+}
+.backgd{
+    background-image: url(https://wallpaperaccess.com/full/8134031.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    height: 630px;
+    width: 650px;
+    margin-left: 200px;
+    border: 10px solid black;
+    position:relative;
+    top:2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.score{
+position: absolute;
+top:30px;
+left: 990px;
+height: 300px;
+width:  300px;
+background-color: rgba(138, 163, 163, 0.521);
+border: 6px solid black;
+color:rgba(221, 16, 16, 0.521);
+}
