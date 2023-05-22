@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="index.css" >
+    <title>Demo form</title>
+</head>
+<body>
+   
+    <form>
+        <legend><b>Demo form</b></legend>
+        <label>Enter first name: </label><br>
+        <input type="text" name="nam" autofocus="" placeholder="Enter your first name" required=""></input><br>
+        <label>Enter last name: </label><br>
+        <input type="text" name="last" placeholder="Enter your last name" required=""><br>
+        <label>Enter email id: </label><br>
+        <input type="email" name="last" required=""><br>
+        <label>Gender: </label><br>
+        <input type="radio" name="gender">Male
+        <input type="radio" name="gender">Female
+        <input type="radio" name="gender">Other<br>
+        <label id="quali">Qualification: </label><br>
+         <select>
+       <option value="bca">BCA</option>
+       <option value="mca">MCA</option>
+       <option value="btech">B.Tech</option>
+       <optgroup label="Mangement">
+        <option value="bba">BBA</option>
+        <option value="mca">MBA</option>
+        <option value="other">other</option>
+       </optgroup>
+        </select><br>
+        <label>Select lauguage's: </label><br>
+        <input type="checkbox" name="hindi" checked="">HINDI
+        <input type="checkbox" name="eng">ENGLIISH
+        <input type="checkbox" name="Urdu">URDU
+        <input type="checkbox" name="Snaskrit">SANSKRIT
+        <br>
+        <label>Enter password: </label><br>
+        <input type="password" id="tog"><br>
+        <button type="submit" name="">Submit</button>
+        <button type="button" onclick="toggle(this)" >Show password</button>
+        <button type="reset" name="">Reset</button>
+    </form>
+
+</body>
+<script src="index.js"></script>
+</html>
